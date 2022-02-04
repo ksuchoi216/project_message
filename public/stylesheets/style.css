@@ -1,8 +1,45 @@
 body {
+  display: flex;
+  flex-direction: column;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
+  text-decoration: none;
   color: #00B7FF;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 5px;
+  border: 4px outset black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+}
+
+input {
+  margin: 3px;
+}
+
+textarea {
+  margin: 3px;
+}
+
+input.summit {
+  width: 100px;
+}
+
+.time {
+  font-size: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
 }

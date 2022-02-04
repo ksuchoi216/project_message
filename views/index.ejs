@@ -5,10 +5,10 @@
   <title>
     <%= title %>
   </title>
-  <link rel='styleshejet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 
-<body>
+<body class=mainContainer>
   <h1>
     <%= title %>
   </h1>
@@ -19,16 +19,17 @@
   <ul>
     <% for(const msg of messages) {%>
       <li>
-        <div>
-          <%= msg.added%>
-        </div>
         <div><strong>
             <%=msg.user%>
           </strong></div>
         <%=msg.text%>
+        <div class="time">
+          <%= msg.added%>
+        </div>
       </li>
       <% } %>
   </ul>
+
 </body>
 
 </html>
